@@ -1,0 +1,23 @@
+num = []
+n = int(input("Enter The number of number you want to know if they are even or odd : "))
+
+if (( n <= 0 ) or ( n > 10 )):
+    n = 5
+
+
+print("Enter ",n," number : ")
+
+for i in range(0, n):
+	ele = int(input())
+	num.append(ele)
+	
+def isEvenOdd(n):
+    for i in range(0, n):
+        if num[i] % 2 == 0:
+            print(num[i] , "is Even")
+        else :
+            print(num[i] , "is Odd")
+
+
+print("---------------------")
+isEvenOdd(n)
