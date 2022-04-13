@@ -1,0 +1,76 @@
+// The First Question : 
+
+
+main() {
+  const hour = DateTime.now().hour;
+  print(hour);
+}
+
+
+// The erorr is the var hour is const var where hour should be int or final data type becouse DateTime.now().hour has change value with real time 
+// so the value will change in every new hour , so we should save it in dynamic var 
+
+
+
+
+// ---------------------------------------------
+
+
+// The Second Question :
+
+
+abstract class Animal {
+  printName();
+  printSound();
+}
+
+class Dog extends Animal {
+  @override
+  printName() {
+    print("This is Dog");
+  }
+
+  @override
+  printSound() {
+    print("The Sound of Dog is Bark");
+  }
+}
+
+class Cat extends Animal {
+  @override
+  printName() {
+    print("This is Cat");
+  }
+
+  @override
+  printSound() {
+    print("The Sound of Cat is meow");
+  }
+}
+
+class Cow extends Animal {
+  @override
+  printName() {
+    print("This is Cow");
+  }
+
+  @override
+  printSound() {
+    print("The Sound of Cow is moo");
+  }
+}
+
+main() {
+  Dog dog = Dog();
+  Cat cat = Cat();
+  Cow cow = Cow();
+
+  dog.printName();
+  dog.printSound();
+
+  cat.printName();
+  cat.printSound();
+
+  cow.printName();
+  cow.printSound();
+}
